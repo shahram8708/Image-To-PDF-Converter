@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merging</title>
+    <style>
+       body {
+            background-color: black;
+        }
+
+        .nav {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .nav2 {
+            background-color: aqua;
+            border: 3px solid red;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .nav1 {
+            font-size: 50px;
+            font-weight: bolder;
+            padding: 20px;
+            color: white;
+        }
+
+        .nav3 {
+            font-size: 30px;
+            font-weight: bolder;
+            padding: 20px;
+        }
+
+        .nav4 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0 20px 60px;
+        }
+
+        input {
+            font-weight: bolder;
+        }
+
+        .nav6 {
+            background-color: blueviolet;
+            color: white;
+            font-size: 40px;
+            padding: 5px 20px;
+            border: 3px solid black;
+        }
+
+        .nav6:hover {
+            background-color: violet;
+            color: black;
+        }
+        h1{
+            font-size: 100px;
+            font-weight: bolder;
+        }
+        @media screen and (max-width: 420px) {
+            .nav4{
+                padding: 20px 0 20px 35px;
+            }
+            
+        }
+        @media screen and (max-width: 350px) {
+            .nav4{
+                padding: 20px 0;
+            }
+            .nav2{
+                padding: 5px;
+                margin: 5px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav1">PDF Merge Free</div>
+
+        <div class="nav2">
+            <div class="nav3">Drag and Drop PDF File (File Extension : .pdf)</div>
+            <div class="nav4">
+                <form action="/merge" method="post" enctype="multipart/form-data">
+                    <input type="file" name="pdfs" class="nav5" multiple accept=".pdf">
+            </div>
+            <input class="nav6" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
